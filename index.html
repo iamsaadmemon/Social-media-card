@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saad Memon's Profile Card</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #2c5364, #00ffe7, #ff00cc, #0078ff);
+      animation: bgMove 15s linear infinite alternate;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @keyframes bgMove {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
+    }
+
+    .card {
+      position: relative;
+      width: 450px;
+      max-width: 95%;
+      padding: 60px 30px 110px;
+      border-radius: 25px;
+      background: linear-gradient(135deg, #111, #1a1a1a);
+      border: 4px solid #00ffe7;
+      box-shadow: 0 0 40px #00ffe7;
+      text-align: center;
+    }
+
+    .status-dot {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #00ff57, #00ffe7);
+      box-shadow: 0 0 20px #00ff57, 0 0 10px #00ffe7;
+    }
+
+    .user-photo {
+      width: 170px;
+      height: 170px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #00ffe7;
+      box-shadow: 0 0 30px #00ffe7, 0 0 40px #ff00cc inset;
+      margin-bottom: 15px;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+      background: linear-gradient(90deg, #00ffe7, #ff00cc, #0078ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .tagline {
+      font-size: 15px;
+      color: #ccc;
+      font-style: italic;
+      margin-bottom: 25px;
+    }
+
+    .icons {
+      position: absolute;
+      bottom: 20px;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .icon-link {
+      font-size: 26px;
+      color: #00ffe7;
+      border: 2px solid #00ffe7;
+      border-radius: 50%;
+      padding: 12px;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .icon-link:hover {
+      transform: scale(1.2);
+      background-color: rgba(0, 255, 231, 0.1);
+    }
+
+    @media (max-width: 500px) {
+      .card {
+        padding-bottom: 130px;
+      }
+
+      .user-photo {
+        width: 130px;
+        height: 130px;
+      }
+
+      h2 {
+        font-size: 24px;
+      }
+
+      .tagline {
+        font-size: 13px;
+      }
+
+      .icon-link {
+        font-size: 22px;
+        padding: 10px;
+      }
+    }
+
+    footer a:hover {
+  text-shadow: 0 0 10px #00ffe7;
+}
+
+
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="status-dot"></div>
+    <img src="p1.jpg" alt="Photo of Saad Memon" class="user-photo" />
+    <h2>Saad Memon</h2>
+    <p class="tagline" style="background: linear-gradient(90deg, #00ffe7, #ff00cc, #0078ff); 
+        -webkit-background-clip: text; 
+        background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        font-weight: bold; 
+        letter-spacing: 1px; 
+        text-shadow: 0 0 8px #00ffe7, 0 0 4px #ff00cc;">
+        Tech enthusiast • Creative explorer • Vision-driven innovator
+    </p>
+    <p class="tagline" style="color: #fff; 
+        font-size: 16px; 
+        font-weight: 500; 
+        background: rgba(0,255,231,0.08); 
+        border-radius: 8px; 
+        padding: 8px 0; 
+        box-shadow: 0 0 10px #00ffe7;">
+        To Connect with me Click the link below
+    </p>
+
+    <div class="icons">
+      <a href="https://wa.me/6358028755" target="_blank" class="icon-link"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.facebook.com/share/1RMmMGg6AQ/" target="_blank" class="icon-link"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/iamsaad_memon" target="_blank" class="icon-link"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.snapchat.com/add/scilent.killler?share_id=pfzPxYg-rVA&locale=en-IN" target="_blank" class="icon-link"><i class="fab fa-snapchat"></i></a>
+      <a href="https://www.linkedin.com/in/saad-memon-9ab4aa337" target="_blank" class="icon-link"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </div>
+  <footer style="position: absolute; bottom: 5px; width: 100%; text-align: center; font-size: 14px; color: #ccc;">
+  Developed by 
+  <a href="https://kuddus1654.github.io/sk-ml" target="_blank" style="color: #00ffe7; font-weight: bold; text-decoration: none;">
+    Kuddus1654
+  </a>
+</footer>
+
+</body>
+</html>
